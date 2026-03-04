@@ -1,6 +1,6 @@
 export const siteData = {
     fullName: "Gabriele Princiotta",
-    title: "Unity XR Developer | UI/UX & Interaction",
+    titles: ["XR and Games Developer", "UI/UX & Interaction", "Computer Graphics"],
     location: "Garching bei München, Germany",
     contacts: [
         { label: "Email", href: "mailto:gabriele.princiotta98@gmail.com", icon: "email" },

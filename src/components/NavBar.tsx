@@ -23,7 +23,10 @@ export default function NavBar(){
             <div className="navbar__header">
                 <img src="/profile.jpg" alt={siteData.fullName} className="navbar__profilePic"></img>
                 <h1>{siteData.fullName}</h1>
-                <h3>{siteData.title}</h3>
+                <h3>{siteData.titles.map((title) => { 
+                    return <span key={title}>{title}</span>
+                    })}   
+                </h3>
             </div>
 
             <ul className="navbar__contacts">

@@ -15,6 +15,7 @@
   --text-secondary: #7A7370;
   --font-display: 'DM Serif Display', serif;
   --font-body: 'DM Sans', sans-serif;
+  --navbar-size: 340px;
 }
 
 body {
