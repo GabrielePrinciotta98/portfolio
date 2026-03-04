@@ -10,6 +10,7 @@ export const siteData = {
     ],
 }
 
+export const cvUrl = "/cv.pdf"
 
 export const navLinks = [
   { label: "About", href: "#about" },
