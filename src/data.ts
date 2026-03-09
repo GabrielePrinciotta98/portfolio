@@ -19,7 +19,9 @@ export const navLinks = [
 ]
 
 export const about = [
-  "I am a Software Developer based in Munich, with a MSc in Games Engineering from TU Munich. I specialize in building games and immersive AR/VR experiences in Unity, with a focus on intuitive UI/UX and real-time computer graphics. I am passionate about the intersection of technology and human interaction, from LLM-powered voice interfaces to educational 3D games.",
+  "I am a Software Developer based in Munich, with a MSc in Games Engineering from TU Munich." +
+  "I specialize in building games and immersive AR/VR experiences in Unity, with a focus on intuitive UI/UX and real-time computer graphics. " +
+  "I am passionate about the intersection of technology and human interaction, from LLM-powered voice interfaces to educational 3D games.",
   "I consider myself a solution-oriented and adaptable person, with good communication and teamwork skills."
 ]
 
@@ -57,6 +59,16 @@ export const projects: Project[] = [
     ]
   },
   {
+    title: "FLEXI-Cross — AR Border Security Situational Awareness",
+    description: "Horizon Europe research project developed at Hololight, aimed at improving border-crossing experiences for passengers and authorities through advanced Human Machine Interfaces. Built an AR application for HoloLens 2 that consumes real-time border security data from a Kafka message broker, visualizing live situational awareness information spatially. Implemented HoloLens 2 camera streaming to a web dashboard using Unity Render Streaming, enabling remote monitoring of field operations.",
+    thumbnail: "/thumbnails/flexi.png",
+    tags: ["Unity", "C#", "HoloLens 2", "MRTK", "AR", "Kafka", "REST API", "Unity Render Streaming", "Figma"],
+    types: ["work"],
+    links: [
+      { label: "FLEXI-Cross Project", href: "https://flexicross-project.eu/" }
+    ]
+  },
+  {
     title: "CrystalloGame — Educational X-Ray Crystallography Puzzle Game",
     description: "BSc thesis at University of Milan. A 3D educational game that teaches X-ray crystallography through hands-on exploration and interactive mechanics. Implements real-time simulation of diffraction patterns using Custom Render Textures and HLSL shaders. Awarded the Matteo Dellapiane Prize for Best BSc Thesis at EuroGraphics Italy STAG 2021.",
     thumbnail: "/thumbnails/Crystal_gameview.png",
@@ -76,5 +88,6 @@ export const projects: Project[] = [
     links: [
       { label: "GitHub", href: "https://github.com/alpcihan/hybrid" }
     ]
-  }
+  },
+  
 ]
