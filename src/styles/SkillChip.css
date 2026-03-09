@@ -1,0 +1,80 @@
+.skill-chip {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg);
+  border-radius: 8px;
+  padding: 0.6rem;
+  width: 72px;
+  height: 72px;
+  cursor: default;
+  overflow: hidden;
+}
+
+.skill-chip__icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  transition: filter 0.2s, opacity 0.2s;
+}
+
+/* name overlay — hidden by default */
+.skill-chip__name {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: center;
+  padding: 0.2rem;
+  opacity: 0;
+  transition: opacity 0.2s;
+  background-color: color-mix(in srgb, var(--surface) 85%, transparent);
+  border-radius: 8px;
+}
+
+/* dots — hidden by default, shown on hover */
+.skill-chip__dots {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 3px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.skill-chip__dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.skill-chip__dot--empty      { background-color: color-mix(in srgb, var(--text-secondary) 30%, transparent); }
+.skill-chip__dot--basic      { background-color: color-mix(in srgb, var(--accent-secondary) 45%, transparent); }
+.skill-chip__dot--familiar   { background-color: color-mix(in srgb, var(--accent-secondary) 70%, transparent); }
+.skill-chip__dot--proficient { background-color: var(--accent-secondary); }
+
+/* hover */
+.skill-chip:hover .skill-chip__icon {
+  filter: brightness(0.4);
+  opacity: 0.6;
+}
+
+.skill-chip:hover .skill-chip__name {
+  opacity: 1;
+}
+
+.skill-chip:hover .skill-chip__dots {
+  opacity: 1;
+}
+
+.skill-chip--basic      { border-bottom: 3px solid color-mix(in srgb, var(--accent-secondary) 45%, transparent); }
+.skill-chip--familiar   { border-bottom: 3px solid color-mix(in srgb, var(--accent-secondary) 70%, transparent); }
+.skill-chip--proficient { border-bottom: 3px solid var(--accent-secondary); }

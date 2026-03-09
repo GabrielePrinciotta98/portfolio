@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar"
 
 import "./App.css"
 import Projects from "./components/Projects"
+import Skills from "./components/Skills"
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <main className="main-content">
         <About />
         <Projects />
+        <Skills />
       </main>
     </div>
   )

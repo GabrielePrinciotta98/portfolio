@@ -91,3 +91,68 @@ export const projects: Project[] = [
   },
   
 ]
+
+export type SkillLevel = "proficient" | "familiar" | "basic"
+
+export type Skill = {
+  name: string
+  level: SkillLevel
+  icon?: string 
+}
+
+export type SkillCategory = {
+  category: string
+  skills: Skill[]
+}
+
+export const skillCategories: SkillCategory[] = [
+  {
+    category: "Game Dev, XR & Graphics",
+    skills: [
+      { name: "Unity", level: "proficient", icon: "/skill-icons/unity.png" },
+      { name: "Unreal Engine", level: "basic", icon: "/skill-icons/unreal-engine.png" },
+      { name: "MRTK", level: "familiar", icon: "/skill-icons/mrtk.png" },
+      { name: "OpenGL", level: "basic", icon: "/skill-icons/opengl.png" },
+      { name: "Vulkan", level: "basic", icon: "/skill-icons/vulkan.png" },
+      { name: "GLSL/HLSL", level: "basic", icon: "/skill-icons/glsl.png" },
+    ]
+  },
+  {
+    category: "Backend",
+    skills: [
+      { name: "C#", level: "proficient", icon: "/skill-icons/c-sharp.png" },
+      { name: "C++", level: "familiar", icon: "/skill-icons/c++.png" },
+      { name: "C", level: "familiar", icon: "/skill-icons/c.png" },
+      { name: "Java", level: "familiar", icon: "/skill-icons/java.png" },
+      { name: "Python", level: "familiar", icon: "/skill-icons/python.png" },
+      { name: "SQL", level: "familiar", icon: "/skill-icons/sql.png" },
+      { name: "REST APIs", level: "proficient", icon: "/skill-icons/rest-api.png" },
+      { name: "JSON", level: "proficient", icon: "/skill-icons/json.png" },
+      { name: "Kafka", level: "basic", icon: "/skill-icons/kafka.png" },
+    ]
+  },
+  {
+    category: "Frontend & Design",
+    skills: [
+      { name: "JavaScript", level: "basic", icon: "/skill-icons/javascript.png" },
+      { name: "TypeScript", level: "basic", icon: "/skill-icons/typescript.png" },
+      { name: "HTML", level: "familiar", icon: "/skill-icons/html5.png" },
+      { name: "CSS", level: "basic", icon: "/skill-icons/css-3.png" },
+      { name: "React", level: "basic", icon: "/skill-icons/react.png" },
+      { name: "Markdown", level: "proficient", icon: "/skill-icons/markdown.png" },
+      { name: "Figma", level: "proficient", icon: "/skill-icons/figma.png" },
+    ]
+  },
+  {
+    category: "DevOps & Workflow",
+    skills: [
+      { name: "Git", level: "proficient", icon: "/skill-icons/git.png" },
+      { name: "Scrum", level: "proficient", icon: "/skill-icons/scrum.png" },
+      { name: "Jira", level: "proficient", icon: "/skill-icons/jira.png" },
+      { name: "Confluence", level: "proficient", icon: "/skill-icons/confluence.png" },
+      { name: "Windows", level: "proficient", icon: "/skill-icons/microsoft-windows.png" },
+      { name: "Linux", level: "familiar", icon: "/skill-icons/linux.png" },
+      { name: "MS Office", level: "proficient", icon: "/skill-icons/microsoft-office.png" },
+    ]
+  },
+]
