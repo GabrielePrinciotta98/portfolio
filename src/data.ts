@@ -19,7 +19,7 @@ export const navLinks = [
 ]
 
 export const about = [
-  "I am a Software Developer based in Munich, with a MSc in Games Engineering from TU Munich." +
+  "I am a Software Developer based in Munich, with a MSc in Games Engineering from TU Munich. " +
   "I specialize in building games and immersive AR/VR experiences in Unity, with a focus on intuitive UI/UX and real-time computer graphics. " +
   "I am passionate about the intersection of technology and human interaction, from LLM-powered voice interfaces to educational 3D games.",
   "I consider myself a solution-oriented and adaptable person, with good communication and teamwork skills."
