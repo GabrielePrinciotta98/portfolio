@@ -5,12 +5,14 @@ import { siteData, navLinks } from "../data";
 
 import { FaGithub, FaLinkedin, FaPhone } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
+import { FaDownload } from 'react-icons/fa'
+import { cvUrl } from '../data'
 
 const contactIcons: Record<string, JSX.Element> = {
-  linkedin: <FaLinkedin />,
-  email: <MdEmail />,
-  phone: <FaPhone />,
-  github: <FaGithub />
+    email: <MdEmail />, 
+    linkedin: <FaLinkedin />,
+    github: <FaGithub />,
+    phone: <FaPhone />
 }
 
 export default function NavBar(){
@@ -21,7 +23,10 @@ export default function NavBar(){
             <div className="navbar__header">
                 <img src="/profile.jpg" alt={siteData.fullName} className="navbar__profilePic"></img>
                 <h1>{siteData.fullName}</h1>
-                <h3>{siteData.title}</h3>
+                <h3>{siteData.titles.map((title) => { 
+                    return <span key={title}>{title}</span>
+                    })}   
+                </h3>
             </div>
 
             <ul className="navbar__contacts">
@@ -34,6 +39,10 @@ export default function NavBar(){
                     </li>
                 ))}
             </ul>
+
+            <a href={cvUrl} download className="contact-btn cv-btn">
+            <FaDownload /> Download my CV
+            </a>
 
             <hr />
                 
