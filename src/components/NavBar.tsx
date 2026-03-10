@@ -1,7 +1,7 @@
 import "../styles/NavBar.css"
 
 import { useState, type JSX } from "react";
-import { siteData, navLinks } from "../data";
+import { contactData, navLinks } from "../data";
 
 import { FaGithub, FaLinkedin, FaPhone } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
@@ -21,16 +21,16 @@ export default function NavBar(){
     return (
         <aside className="navbar">
             <div className="navbar__header">
-                <img src="/profile.jpg" alt={siteData.fullName} className="navbar__profilePic"></img>
-                <h1>{siteData.fullName}</h1>
-                <h3>{siteData.titles.map((title) => { 
+                <img src="/profile.jpg" alt={contactData.fullName} className="navbar__profilePic"></img>
+                <h1>{contactData.fullName}</h1>
+                <h3>{contactData.titles.map((title) => { 
                     return <span key={title}>{title}</span>
                     })}   
                 </h3>
             </div>
 
             <ul className="navbar__contacts">
-                {siteData.contacts.map(contact => (
+                {contactData.contacts.map(contact => (
                     <li key={contact.label}>
                         <a href={contact.href} target="_blank" rel="noopener noreferrer" className="contact-btn">
                             {contactIcons[contact.icon]}

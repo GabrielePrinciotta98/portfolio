@@ -1,4 +1,8 @@
-export const siteData = {
+// ============================================================
+// NAVBAR
+// ============================================================
+
+export const contactData = {
     fullName: "Gabriele Princiotta",
     titles: ["XR and Games Developer", "UI/UX & Interaction", "Computer Graphics"],
     location: "Garching bei München, Germany",
@@ -18,12 +22,48 @@ export const navLinks = [
   { label: "Skills", href: "#skills" },
 ]
 
-export const about = [
-  "I am a Software Developer based in Munich, with a MSc in Games Engineering from TU Munich. " +
-  "I specialize in building games and immersive AR/VR experiences in Unity, with a focus on intuitive UI/UX and real-time computer graphics. " +
-  "I am passionate about the intersection of technology and human interaction, from LLM-powered voice interfaces to educational 3D games.",
-  "I consider myself a solution-oriented and adaptable person, with good communication and teamwork skills."
+// ============================================================
+// ABOUT
+// ============================================================
+
+export type AboutSegment = { text: string; highlight?: "primary" | "secondary" }
+export type AboutParagraph = AboutSegment[]
+
+export const about: AboutParagraph[] = [
+  [ 
+    { text: "I am a " },
+    { text: "Software Developer", highlight: "primary" },
+    { text: " based in Munich, with a " },
+    { text: "MSc in Games Engineering", highlight: "primary" },
+    { text: " from TU Munich. I specialize in building " },
+    { text: "games and immersive AR/VR experiences", highlight: "secondary" },
+    { text: " in Unity, with a focus on " },
+    { text: "intuitive UI/UX", highlight: "secondary" },
+    { text: " and " },
+    { text: "real-time computer graphics", highlight: "secondary" },
+    { text: ". I am passionate about the intersection of technology and human interaction, from " },
+    { text: "LLM-powered voice interfaces", highlight: "secondary" },
+    { text: " to " },
+    { text: "educational 3D games", highlight: "secondary" },
+    { text: "." },
+  ],
+  [
+    { text: "I consider myself a " },
+    { text: "solution-oriented", highlight: "primary" },
+    { text: " and " },
+    { text: "adaptable", highlight: "primary" },
+    { text: " person, with good " },
+    { text: "communication and teamwork", highlight: "primary" },
+    { text: " skills." },
+    { text: " I am eager to take on"},
+    { text: " new challenges", highlight: "secondary"},
+    { text: " that will allow me to grow both professionally and personally."}
+  ]
 ]
+
+// ============================================================
+// PROJECTS
+// ============================================================
 
 export type ProjectType = "uni" | "work" | "personal"
 
@@ -92,6 +132,10 @@ export const projects: Project[] = [
   
 ]
 
+// ============================================================
+// SKILLS
+// ============================================================
+
 export type SkillLevel = "proficient" | "familiar" | "basic"
 
 export type Skill = {
@@ -156,5 +200,9 @@ export const skillCategories: SkillCategory[] = [
     ]
   },
 ]
+
+// ============================================================
+// FOOTER
+// ============================================================
 
 export const footer = "© 2026 Gabriele Princiotta. The logos and registered trademarks are the property of their respective owners."

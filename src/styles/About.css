@@ -9,3 +9,17 @@
   box-shadow: 0 8px 32px color-mix(in srgb, var(--accent-primary) 35%, transparent);
   transform: translateY(-2px);
 }
+
+.about-keyword {
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: color 0.2s;
+}
+
+.about-card:hover .about-keyword--primary {
+  color: var(--accent-primary);
+}
+
+.about-card:hover .about-keyword--secondary {
+  color: var(--accent-secondary);
+}
