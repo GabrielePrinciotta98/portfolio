@@ -4,7 +4,7 @@ import { useState, type JSX } from "react";
 import { contactData, navLinks } from "../data";
 
 import { FaGithub, FaLinkedin, FaPhone } from 'react-icons/fa'
-import { FaSun, FaMoon, FaGlobe } from "react-icons/fa"
+import { FaSun, FaMoon } from "react-icons/fa"
 import { MdEmail } from 'react-icons/md'
 import { FaDownload } from 'react-icons/fa'
 import { cvUrl } from '../data'
@@ -78,13 +78,13 @@ export default function NavBar({ isDark, onThemeToggle }: NavBarProps) {
                 >
                     {isDark ? <FaSun /> : <FaMoon />}
                 </button>
-                <button
+                {/* <button
                     className="navbar__toggle navbar__toggle--lang"
                     title={isItalian ? "Switch to English" : "Passa all'Italiano"}
                     onClick={() => setIsItalian(!isItalian)}
                 >
                     {isItalian ? "EN" : "IT"}
-                </button>
+                </button> */}
             </div>
         </aside>
     )
