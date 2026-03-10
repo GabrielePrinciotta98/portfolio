@@ -30,7 +30,7 @@ export default function NavBar({ isDark, onThemeToggle }: NavBarProps) {
     return (
         <aside className="navbar">
             <div className="navbar__header">
-                <img src="/profile.jpg" alt={contactData.fullName} className="navbar__profilePic"></img>
+                <img src="profile.jpg" alt={contactData.fullName} className="navbar__profilePic"></img>
                 <h1>{contactData.fullName}</h1>
                 <h3>{contactData.titles.map((title) => {
                     return <span key={title}>{title}</span>
