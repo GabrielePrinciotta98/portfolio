@@ -25,7 +25,7 @@ export default function NavBar({ isDark, onThemeToggle }: NavBarProps) {
     const [activeLink, setActiveLink] = useState("#about");
 
 
-    const [isItalian, setIsItalian] = useState(false)
+    // const [isItalian, setIsItalian] = useState(false)
 
     return (
         <aside className="navbar">
