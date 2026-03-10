@@ -80,7 +80,7 @@ export const projects: Project[] = [
   {
     title: "XR Assembly Training with LLM Voice Assistant",
     description: "MSc thesis at TU Munich, developed in collaboration with Hololight as part of the Horizon Europe VOXReality project. Extended an AR industrial assembly training platform for HoloLens 2 with an open-ended 'Free Mode', integrating an LLM-based voice assistant (ARTA) and automatic speech recognition for hands-free, context-aware guidance. Conducted a within-subjects user study (n=13) comparing voice-driven vs. GUI-based interaction, measuring cognitive load, usability, and engagement.",
-    thumbnail: "/thumbnails/voxyPanel1.png",
+    thumbnail: "thumbnails/voxyPanel1.png",
     tags: ["Unity", "C#", "HoloLens 2", "MRTK", "AR", "LLM", "REST API", "Figma", "UX Research"],
     types: ["uni", "work"],
     links: [
@@ -91,7 +91,7 @@ export const projects: Project[] = [
   {
     title: "OVERWATCH — XR Management Map for Safety and Crisis Events",
     description: "Horizon Europe research project developed at Hololight. Built XR solutions for real-time monitoring of natural disasters and drone missions, featuring interactive 3D map visualizations and live geographical data overlays on HoloLens 2 and Meta Quest 3. Contributed to UI/UX design in Figma and Unity development of spatial data interfaces.",
-    thumbnail: "/thumbnails/overwatch.jpeg",
+    thumbnail: "thumbnails/overwatch.jpeg",
     tags: ["Unity", "C#", "HoloLens 2", "Meta Quest 3", "MRTK", "REST API", "Figma", "AR", "VR"],
     types: ["work"],
     links: [
@@ -101,7 +101,7 @@ export const projects: Project[] = [
   {
     title: "FLEXI-Cross — AR Border Security Situational Awareness",
     description: "Horizon Europe research project developed at Hololight, aimed at improving border-crossing experiences for passengers and authorities through advanced Human Machine Interfaces. Built an AR application for HoloLens 2 that consumes real-time border security data from a Kafka message broker, visualizing live situational awareness information spatially. Implemented HoloLens 2 camera streaming to a web dashboard using Unity Render Streaming, enabling remote monitoring of field operations.",
-    thumbnail: "/thumbnails/flexi.png",
+    thumbnail: "thumbnails/flexi.png",
     tags: ["Unity", "C#", "HoloLens 2", "MRTK", "AR", "Kafka", "REST API", "Unity Render Streaming", "Figma"],
     types: ["work"],
     links: [
@@ -111,18 +111,18 @@ export const projects: Project[] = [
   {
     title: "CrystalloGame — Educational X-Ray Crystallography Puzzle Game",
     description: "BSc thesis at University of Milan. A 3D educational game that teaches X-ray crystallography through hands-on exploration and interactive mechanics. Implements real-time simulation of diffraction patterns using Custom Render Textures and HLSL shaders. Awarded the Matteo Dellapiane Prize for Best BSc Thesis at EuroGraphics Italy STAG 2021.",
-    thumbnail: "/thumbnails/Crystal_gameview.png",
+    thumbnail: "thumbnails/Crystal_gameview.png",
     tags: ["Unity", "C#", "HLSL", "Custom Render Textures", "Computer Graphics", "Game Design", "Education"],
     types: ["uni"],
     links: [
       { label: "Play Game", href: "https://gabrieleprinciotta98.github.io/CrystalloGame/" },
-      { label: "Download Presentation", href: "downloadables/RiassuntoTesiGabrielePrinciotta.pdf", download: true },
+      { label: "Download Presentation", href: "downloadables/Bachelor-Thesis.pdf", download: true },
     ]
   },
   {
     title: "Hybrid — Tiny Vulkan Rendering Engine",
     description: "Group project for the GPU Programming course at TU Munich. A real-time rendering engine built from scratch in C++ and Vulkan, exploring hybrid rasterization and ray tracing techniques. Contributed to input systems and camera controls.",
-    thumbnail: "/thumbnails/hybrid.jpg",
+    thumbnail: "thumbnails/hybrid.jpg",
     tags: ["C++", "Vulkan", "Ray Tracing", "Rasterization", "Computer Graphics", "GPU Programming"],
     types: ["uni"],
     links: [
@@ -154,52 +154,52 @@ export const skillCategories: SkillCategory[] = [
   {
     category: "Game Dev, XR & Graphics",
     skills: [
-      { name: "Unity", level: "proficient", icon: "/skill-icons/unity.png", invertOnDark: true },
-      { name: "Unreal Engine", level: "basic", icon: "/skill-icons/unreal-engine.png", invertOnDark: true },
-      { name: "MRTK", level: "familiar", icon: "/skill-icons/mrtk.png", invertOnDark: true },
-      { name: "OpenGL", level: "basic", icon: "/skill-icons/opengl.png" },
-      { name: "Vulkan", level: "basic", icon: "/skill-icons/vulkan.png" },
-      { name: "GLSL/HLSL", level: "basic", icon: "/skill-icons/glsl.png" },
+      { name: "Unity", level: "proficient", icon: "skill-icons/unity.png", invertOnDark: true },
+      { name: "Unreal Engine", level: "basic", icon: "skill-icons/unreal-engine.png", invertOnDark: true },
+      { name: "MRTK", level: "familiar", icon: "skill-icons/mrtk.png", invertOnDark: true },
+      { name: "OpenGL", level: "basic", icon: "skill-icons/opengl.png" },
+      { name: "Vulkan", level: "basic", icon: "skill-icons/vulkan.png" },
+      { name: "GLSL/HLSL", level: "basic", icon: "skill-icons/glsl.png" },
     ]
   },
   {
     category: "Backend",
     skills: [
-      { name: "C#", level: "proficient", icon: "/skill-icons/c-sharp.png" },
-      { name: "C++", level: "familiar", icon: "/skill-icons/c++.png" },
-      { name: "C", level: "familiar", icon: "/skill-icons/c.png" },
-      { name: "Java", level: "familiar", icon: "/skill-icons/java.png" },
-      { name: "Python", level: "familiar", icon: "/skill-icons/python.png" },
-      { name: "SQL", level: "familiar", icon: "/skill-icons/sql.png" },
-      { name: "REST APIs", level: "proficient", icon: "/skill-icons/rest-api.png" },
-      { name: "JSON", level: "proficient", icon: "/skill-icons/json.png", invertOnDark: true },
-      { name: "Kafka", level: "basic", icon: "/skill-icons/kafka.png", invertOnDark: true },
+      { name: "C#", level: "proficient", icon: "skill-icons/c-sharp.png" },
+      { name: "C++", level: "familiar", icon: "skill-icons/c++.png" },
+      { name: "C", level: "familiar", icon: "skill-icons/c.png" },
+      { name: "Java", level: "familiar", icon: "skill-icons/java.png" },
+      { name: "Python", level: "familiar", icon: "skill-icons/python.png" },
+      { name: "SQL", level: "familiar", icon: "skill-icons/sql.png" },
+      { name: "REST APIs", level: "proficient", icon: "skill-icons/rest-api.png" },
+      { name: "JSON", level: "proficient", icon: "skill-icons/json.png", invertOnDark: true },
+      { name: "Kafka", level: "basic", icon: "skill-icons/kafka.png", invertOnDark: true },
     ]
   },
   {
     category: "Frontend & Design",
     skills: [
-      { name: "JavaScript", level: "basic", icon: "/skill-icons/javascript.png" },
-      { name: "TypeScript", level: "basic", icon: "/skill-icons/typescript.png" },
-      { name: "HTML", level: "familiar", icon: "/skill-icons/html5.png" },
-      { name: "CSS", level: "basic", icon: "/skill-icons/css-3.png" },
-      { name: "React", level: "basic", icon: "/skill-icons/react.png" },
-      { name: "Markdown", level: "proficient", icon: "/skill-icons/markdown.png", invertOnDark: true },
-      { name: "Figma", level: "proficient", icon: "/skill-icons/figma.png" },
+      { name: "JavaScript", level: "basic", icon: "skill-icons/javascript.png" },
+      { name: "TypeScript", level: "basic", icon: "skill-icons/typescript.png" },
+      { name: "HTML", level: "familiar", icon: "skill-icons/html5.png" },
+      { name: "CSS", level: "basic", icon: "skill-icons/css-3.png" },
+      { name: "React", level: "basic", icon: "skill-icons/react.png" },
+      { name: "Markdown", level: "proficient", icon: "skill-icons/markdown.png", invertOnDark: true },
+      { name: "Figma", level: "proficient", icon: "skill-icons/figma.png" },
     ]
   },
   {
     category: "DevOps & Workflow",
     skills: [
-      { name: "Git", level: "proficient", icon: "/skill-icons/git.png" },
-      { name: "GitHub", level: "proficient", icon: "/skill-icons/github.png", invertOnDark: true},
-      { name: "Azure DevOps", level: "proficient", icon: "/skill-icons/azure-devops.png"},
-      { name: "Scrum", level: "proficient", icon: "/skill-icons/scrum.png" },
-      { name: "Jira", level: "proficient", icon: "/skill-icons/jira.png" },
-      { name: "Confluence", level: "proficient", icon: "/skill-icons/confluence.png" },
-      { name: "Windows", level: "proficient", icon: "/skill-icons/microsoft-windows.png" },
-      { name: "Linux", level: "familiar", icon: "/skill-icons/linux.png"},
-      { name: "MS Office", level: "proficient", icon: "/skill-icons/microsoft-office.png" },
+      { name: "Git", level: "proficient", icon: "skill-icons/git.png" },
+      { name: "GitHub", level: "proficient", icon: "skill-icons/github.png", invertOnDark: true},
+      { name: "Azure DevOps", level: "proficient", icon: "skill-icons/azure-devops.png"},
+      { name: "Scrum", level: "proficient", icon: "skill-icons/scrum.png" },
+      { name: "Jira", level: "proficient", icon: "skill-icons/jira.png" },
+      { name: "Confluence", level: "proficient", icon: "skill-icons/confluence.png" },
+      { name: "Windows", level: "proficient", icon: "skill-icons/microsoft-windows.png" },
+      { name: "Linux", level: "familiar", icon: "skill-icons/linux.png"},
+      { name: "MS Office", level: "proficient", icon: "skill-icons/microsoft-office.png" },
     ]
   },
 ]
