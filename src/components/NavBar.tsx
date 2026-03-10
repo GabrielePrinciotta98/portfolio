@@ -4,28 +4,37 @@ import { useState, type JSX } from "react";
 import { contactData, navLinks } from "../data";
 
 import { FaGithub, FaLinkedin, FaPhone } from 'react-icons/fa'
+import { FaSun, FaMoon, FaGlobe } from "react-icons/fa"
 import { MdEmail } from 'react-icons/md'
 import { FaDownload } from 'react-icons/fa'
 import { cvUrl } from '../data'
 
 const contactIcons: Record<string, JSX.Element> = {
-    email: <MdEmail />, 
+    email: <MdEmail />,
     linkedin: <FaLinkedin />,
     github: <FaGithub />,
     phone: <FaPhone />
 }
 
-export default function NavBar(){
+type NavBarProps = {
+    isDark: boolean
+    onThemeToggle: () => void
+}
+
+export default function NavBar({ isDark, onThemeToggle }: NavBarProps) {
     const [activeLink, setActiveLink] = useState("#about");
+
+
+    const [isItalian, setIsItalian] = useState(false)
 
     return (
         <aside className="navbar">
             <div className="navbar__header">
                 <img src="/profile.jpg" alt={contactData.fullName} className="navbar__profilePic"></img>
                 <h1>{contactData.fullName}</h1>
-                <h3>{contactData.titles.map((title) => { 
+                <h3>{contactData.titles.map((title) => {
                     return <span key={title}>{title}</span>
-                    })}   
+                })}
                 </h3>
             </div>
 
@@ -41,11 +50,11 @@ export default function NavBar(){
             </ul>
 
             <a href={cvUrl} download className="contact-btn cv-btn">
-            <FaDownload /> Download my CV
+                <FaDownload /> Download my CV
             </a>
 
             <hr />
-                
+
 
             <nav className="navbar__nav">
                 <ul>
@@ -61,6 +70,22 @@ export default function NavBar(){
                     ))}
                 </ul>
             </nav>
+            <div className="navbar__toggles">
+                <button
+                    className="navbar__toggle"
+                    title={isDark ? "Switch to light mode" : "Switch to dark mode"}
+                    onClick={onThemeToggle}
+                >
+                    {isDark ? <FaSun /> : <FaMoon />}
+                </button>
+                <button
+                    className="navbar__toggle navbar__toggle--lang"
+                    title={isItalian ? "Switch to English" : "Passa all'Italiano"}
+                    onClick={() => setIsItalian(!isItalian)}
+                >
+                    {isItalian ? "EN" : "IT"}
+                </button>
+            </div>
         </aside>
     )
 }

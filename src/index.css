@@ -24,3 +24,11 @@ body {
   color: var(--text-primary);
   font-family: var(--font-body);
 }
+
+body.dark {
+  --bg: #1A1A1A;
+  --surface: #242424;
+  --text-primary: #F0EBE3;
+  --text-secondary: #9A9390;
+  --text-body: #C8C3BC;
+}

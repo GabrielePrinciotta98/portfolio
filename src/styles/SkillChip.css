@@ -78,3 +78,7 @@
 .skill-chip--basic      { border-bottom: 3px solid color-mix(in srgb, var(--accent-secondary) 45%, transparent); }
 .skill-chip--familiar   { border-bottom: 3px solid color-mix(in srgb, var(--accent-secondary) 70%, transparent); }
 .skill-chip--proficient { border-bottom: 3px solid var(--accent-secondary); }
+
+body.dark .skill-chip__icon[data-invert="true"] {
+  filter: invert(1);
+}

@@ -13,7 +13,7 @@ export default function SkillChip({ skill }: { skill: Skill }) {
   return (
     <div className={`skill-chip skill-chip--${skill.level}`}>
       {skill.icon && (
-        <img src={skill.icon} alt={skill.name} className="skill-chip__icon" />
+        <img src={skill.icon} alt={skill.name} className="skill-chip__icon" data-invert={skill.invertOnDark ? "true" : "false"} />
       )}
       <span className="skill-chip__name">{skill.name}</span>
       <div className="skill-chip__dots">
