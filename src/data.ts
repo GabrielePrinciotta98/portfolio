@@ -192,6 +192,8 @@ export const skillCategories: SkillCategory[] = [
     category: "DevOps & Workflow",
     skills: [
       { name: "Git", level: "proficient", icon: "/skill-icons/git.png" },
+      { name: "GitHub", level: "proficient", icon: "/skill-icons/github.png", invertOnDark: true},
+      { name: "Azure DevOps", level: "proficient", icon: "/skill-icons/azure-devops.png"},
       { name: "Scrum", level: "proficient", icon: "/skill-icons/scrum.png" },
       { name: "Jira", level: "proficient", icon: "/skill-icons/jira.png" },
       { name: "Confluence", level: "proficient", icon: "/skill-icons/confluence.png" },
