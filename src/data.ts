@@ -156,3 +156,5 @@ export const skillCategories: SkillCategory[] = [
     ]
   },
 ]
+
+export const footer = "© 2026 Gabriele Princiotta. The logos and registered trademarks are the property of their respective owners."

@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar"
 import "./App.css"
 import Projects from "./components/Projects"
 import Skills from "./components/Skills"
+import Footer from './components/Footer'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Projects />
         <Skills />
       </main>
+      <Footer />
     </div>
   )
 }

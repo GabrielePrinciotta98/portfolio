@@ -30,3 +30,15 @@
 .section p:last-child {
   margin-bottom: 0;
 }
+
+.footer {
+  margin-left: var(--navbar-size);
+  padding: 1.5rem 4rem;
+  border-top: 1.5px solid color-mix(in srgb, var(--accent-secondary) 30%, transparent);
+}
+
+.footer p {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
