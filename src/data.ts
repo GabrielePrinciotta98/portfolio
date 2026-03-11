@@ -129,6 +129,16 @@ export const projects: Project[] = [
       { label: "GitHub", href: "https://github.com/alpcihan/hybrid" }
     ]
   },
+  {
+  title: "Coin SoccAR",
+  description: "Group project for the Augmented Reality course at TU Munich. An AR twist on the classic tabletop game penny football, where physical coins are tracked via computer vision and augmented with 3D rendered objects in real time. Built from scratch in C++ using OpenCV for marker and coin detection, pose estimation, and camera calibration, and OpenGL for rendering 3D models such as a soccer ball, shoes, and coin overlays. Features a particle system, sound effects, and a full game loop with scoring.",
+  thumbnail: "thumbnails/coin-soccAR.png",
+  tags: ["C++", "OpenCV", "OpenGL", "AR", "Computer Vision", "Game Design", "Computer Graphics"],
+  types: ["uni"],
+  links: [
+    { label: "GitHub", href: "https://github.com/GabrielePrinciotta98/ARCoinSoccer" }
+  ]
+}
   
 ]
 
@@ -160,6 +170,7 @@ export const skillCategories: SkillCategory[] = [
       { name: "OpenGL", level: "basic", icon: "skill-icons/opengl.png" },
       { name: "Vulkan", level: "basic", icon: "skill-icons/vulkan.png" },
       { name: "GLSL/HLSL", level: "basic", icon: "skill-icons/glsl.png" },
+      { name: "OpenCV", level: "basic", icon: "skill-icons/opencv.png" },
     ]
   },
   {
